@@ -1,14 +1,14 @@
 //====================================================================
 function getElementWidth(content, padding, border) {
-	let contentSize = Number.parseFloat(content);
-	
+  let contentSize = Number.parseFloat(content);
+
   let paddingSize = Number.parseFloat(padding);
-	paddingSize *= 2;
-	
+  paddingSize *= 2;
+
   let borderSize = Number.parseFloat(border);
-	borderSize *= 2;
-	
-  let borderBox = contentSize + paddingSize + borderSize;
+  borderSize *= 2;
+
+  const borderBox = contentSize + paddingSize + borderSize;
 
   return borderBox;
 }
